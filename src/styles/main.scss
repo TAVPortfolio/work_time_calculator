@@ -13,6 +13,7 @@
   &__title {
     text-align: center;
     margin-bottom: 70px;
+    font-size: 40px;
   }
 }
 
@@ -21,7 +22,6 @@
   display: flex;
   background-color: $calculator-background;
   border-radius: 25px;
-  height: 300px;
   max-width: 70%;
   box-shadow: 11px 11px 20px 3px #020202;
   &__info {
@@ -32,7 +32,7 @@
   }
 }
 .form {
-  min-width: 250px;
+  max-width: 400px;
   display: flex;
   justify-content: space-around;
   align-self: center;
@@ -50,7 +50,23 @@
     margin: 5px;
   }
   &__btn {
-    display: none;
+    cursor: pointer;
+    color: inherit;
+    border: none;
+    margin: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #7b586b;
+    border: 1px solid #1d0f0f;
+    border-radius: 20px;
+    padding: 10px 12px;
+    box-shadow: 0px 5px 0px #1d0f0f3d;
+    transition: all 0.1s;
+    &:active {
+      box-shadow: 0px 2px 0px #1d0f0f57;
+      position: relative;
+      top: 2px;
+    }
   }
 }
 

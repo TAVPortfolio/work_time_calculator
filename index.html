@@ -17,16 +17,6 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__inner">
-
-      </div>
-      <!-- /.inner__inner -->
-    </div>
-    <!-- /.container -->
-  </header>
-  <!-- /.header -->
   <section class="main">
     <div class="container">
       <div class="main__inner">
@@ -35,20 +25,19 @@
           <form action="#" class="form">
             <div class="form__block">
               <label class="form__label" for="startTime">Start day</label>
-              <input class="form__input" type="time" id="startTime">
+              <input class="form__input" type="time" id="startTime" required>
             </div>
             <!-- /.form__block -->
             <div class="form__block">
               <label class="form__label" for="endTime">End day</label>
-              <input class="form__input" type="time" id="endTime">
+              <input class="form__input" type="time" id="endTime" required>
             </div>
             <button class="form__btn" type="submit">calculate</button>
             <!-- /.form__block -->
           </form>
           <div class="calculator__info">
             <ul class="result__list">
-              <li class="result__item">10:30</li>
-              <li class="result__item">10.50</li>
+              <li class="result__item">hh:mm (h:(h%))</li>
             </ul>
           </div>
           <!-- /.calculator__info -->
