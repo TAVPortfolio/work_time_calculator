@@ -1,0 +1,69 @@
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.main {
+  &__inner {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+}
+
+.calculator {
+  padding: 20px;
+  display: flex;
+  background-color: $calculator-background;
+  border-radius: 25px;
+  height: 300px;
+  max-width: 70%;
+  box-shadow: 11px 11px 20px 3px #020202;
+  &__info {
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+  }
+}
+.form {
+  min-width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  &__label {
+    cursor: pointer;
+    margin: 5px;
+    color: $primary-text-color;
+  }
+  &__input {
+    margin: 5px;
+  }
+  &__btn {
+    display: none;
+  }
+}
+
+input[type='time'] {
+  background-color: transparent;
+  color: inherit;
+}
+
+.result {
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    margin: 15px 0;
+  }
+}

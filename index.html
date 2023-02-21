@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work time</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/814/814114.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+
+      </div>
+      <!-- /.inner__inner -->
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header -->
+  <section class="main">
+    <div class="container">
+      <div class="main__inner">
+        <h1 class="main__title">Working time calculator</h1>
+        <div class="calculator">
+          <form action="#" class="form">
+            <div class="form__block">
+              <label class="form__label" for="startTime">Start day</label>
+              <input class="form__input" type="time" id="startTime">
+            </div>
+            <!-- /.form__block -->
+            <div class="form__block">
+              <label class="form__label" for="endTime">End day</label>
+              <input class="form__input" type="time" id="endTime">
+            </div>
+            <button class="form__btn" type="submit">calculate</button>
+            <!-- /.form__block -->
+          </form>
+          <div class="calculator__info">
+            <ul class="result__list">
+              <li class="result__item">10:30</li>
+              <li class="result__item">10.50</li>
+            </ul>
+          </div>
+          <!-- /.calculator__info -->
+        </div>
+        <!-- /.calculator-block -->
+      </div>
+      <!-- /.main__inner -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.main -->
+</body>
+<script src="src/js/index.js"></script>
+
+</html>
