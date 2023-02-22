@@ -18,10 +18,7 @@ const getTimeDifference = () => {
   return `${formattedHours}:${formattedMinutes} (${formattedFractionOfHour})`;
 };
 
-document
-  .querySelector('.form__btn')
-  .addEventListener(
-    'click',
-    () =>
-      (document.querySelector('.result__item').innerHTML = getTimeDifference())
-  );
+document.querySelector('.form__btn').addEventListener('click', (e) => {
+  e.preventDefault;
+  document.querySelector('.result__item').innerHTML = getTimeDifference();
+});
