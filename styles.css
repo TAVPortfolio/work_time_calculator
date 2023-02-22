@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: #1d0f0f;
   font-size: 18px;
   color: #d4dbe2;
@@ -39,11 +39,12 @@ li {
 }
 
 .calculator {
+  flex-wrap: wrap;
   padding: 20px;
   display: flex;
   background-color: #453c41;
   border-radius: 25px;
-  max-width: 70%;
+  max-width: fit-content;
   box-shadow: 11px 11px 20px 3px #020202;
 }
 .calculator__info {
@@ -56,13 +57,14 @@ li {
 .form {
   max-width: 400px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-self: center;
 }
 .form__block {
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
 }
 .form__label {
   cursor: pointer;
@@ -92,7 +94,7 @@ li {
   top: 2px;
 }
 
-input[type=time] {
+input[type='time'] {
   background-color: transparent;
   color: inherit;
 }
